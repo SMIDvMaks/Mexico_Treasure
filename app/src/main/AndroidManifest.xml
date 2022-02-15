@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.moecxi.terreuas">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_apikk"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_apikk_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MexicoTreasure"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".PRIVAVI"
+            android:exported="false"
+            android:label="@string/title_activity_privavi"
+            android:theme="@style/Theme.MexicoTreasure.NoActionBar" />
+        <activity
+            android:name=".Rulele"
+            android:exported="false"
+            android:label="@string/title_activity_rulele"
+            android:theme="@style/Theme.MexicoTreasure.NoActionBar" />
+        <activity
+            android:name=".AAG"
+            android:exported="false"
+            android:label="@string/title_activity_aag"
+            android:theme="@style/Theme.MexicoTreasure.NoActionBar" />
+        <activity
+            android:name=".STGAGA"
+            android:exported="false"
+            android:label="@string/title_activity_stgaga"
+            android:theme="@style/Theme.MexicoTreasure.NoActionBar" />
+
+        <receiver
+            android:name="com.appsflyer.SingleInstallBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6749356078532976~3507678543" />
+
+        <activity
+            android:name=".MT8"
+            android:configChanges="fontScale|keyboard|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MexicoTreasure.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
