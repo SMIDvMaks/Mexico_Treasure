@@ -245,7 +245,7 @@ class MT8 : ComponentActivity() {
             override fun onPageStarted(wew: WebView?, urlue: String?, faviconndnq: Bitmap?) {
                 super.onPageStarted(wew, urlue, faviconndnq)
                 onERProgre(-1)
-                if (urlue?.contains(pp.Darika("NDA0")) == true) {
+                if (urlue?.contains(pp.Darika("Z2FwcHM9NDA0")) == true) {
                     val oqos = Intent(this@MT8, STGAGA::class.java)
                     startActivity(oqos)
                 }
@@ -296,6 +296,7 @@ class MT8 : ComponentActivity() {
             OhBack(wbyeq)
         }
     }
+
 
     override fun onActivityResult(reposqC: Int, resikaks: Int, drais: Intent?) {
         super.onActivityResult(reposqC, resikaks, drais)
